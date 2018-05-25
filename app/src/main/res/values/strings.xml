@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Ejemplo Permisos Riesgosos</string>
+    <string name="parrafo1">Ejemplo de solicitud de permisos riesgosos en android, contiene los nueves grupos de permisos riesgosos.</string>
+    <string name="boton1">Solicitar permisos</string>
+    <string name="boton2">Iniciar Aplicacion</string>
+    <string name="repositorio">https://github.com/JoelCautiRojas/Ejemplo_Permisos_de_sistema_MAY2018.git</string>
+
+    <!-- Permisos -->
+    <string name="permission1">READ_CALENDAR</string>
+    <string name="permission2">WRITE_CALENDAR</string>
+    <string name="permission3">WRITE_CALL_LOG</string>
+    <string name="permission4">CAMERA</string>
+    <string name="permission24">WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission23">READ_EXTERNAL_STORAGE</string>
+    <string name="permission22">RECEIVE_MMS</string>
+    <string name="permission21">RECEIVE_WAP_PUSH</string>
+    <string name="permission20">READ_SMS</string>
+    <string name="permission19">RECEIVE_SMS</string>
+    <string name="permission18">SEND_SMS</string>
+    <string name="permission17">BODY_SENSORS</string>
+    <string name="permission16">PROCESS_OUTGOING_CALLS</string>
+    <string name="permission15">USE_SIP</string>
+    <string name="permission14">ADD_VOICEMAIL</string>
+    <string name="permission5">READ_CONTACTS</string>
+    <string name="permission6">WRITE_CONTACTS</string>
+    <string name="permission7">GET_ACCOUNTS</string>
+    <string name="permission8">ACCESS_FINE_LOCATION</string>
+    <string name="permission9">ACCESS_COARSE_LOCATION</string>
+    <string name="permission10">RECORD_AUDIO</string>
+    <string name="permission11">READ_PHONE_STATE</string>
+    <string name="permission12">CALL_PHONE</string>
+    <string name="permission13">READ_CALL_LOG</string>
+
+    <!-- Firma -->
+    <string name="firma_autor">Joel Ruben Cauti Rojas</string>
+    <string name="firma_pais">LIMA - PERÚ</string>
+    <string name="firma_telefono_autor">+051 – 963 315 470</string>
+    <string name="firma_ejercicio_titulo">Ejercicio de Permisos Riesgosos</string>
+    <string name="firma_web">http://www.programadoresperuanos.com</string>
+    <string name="firma_titulo">PROGRAMADORES PERUANOS</string>
+    <string name="firma_descripcion_logo">Imagen miniatura del logo Club del Caos</string>
+
+    <!-- Imagenes -->
+    <string name="icono1">Icono de Android</string>
+
+    <!-- Menu -->
+    <string name="opcion1_menu1">Inicio</string>
+    <string name="opcion2_menu1">Acerca de Nosotros</string>
+    <string name="icono_clubdelcaos">icono de club del caos</string>
+    <string name="titulo1">Lista de Permisos Solicitados</string>
+</resources>
