@@ -6,19 +6,1364 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f4f4f4"
     tools:context=".Main2Activity">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:enabled="false"
-        android:text="@string/boton2" />
-
-    <TextView
-        android:id="@+id/stringresult"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:orientation="vertical" >
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="CALENDAR"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(calendario)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textColor="#545454"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_CALENDAR"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación lea los datos del calendario del usuario."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="#545454"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WRITE_CALENDAR" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación escriba los datos del calendario del usuario." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton1"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="CAMERA"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(camara)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="#545454"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CAMERA"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Se requiere para poder acceder al dispositivo de la cámara."/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton2"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="CONTACTS"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(contactos)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_CONTACTS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación lea los datos de los contactos del usuario."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="#545454"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WRITE_CONTACTS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación escriba datos de contactos del usuario."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="#545454"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="GET_ACCOUNTS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite el acceso a la lista de cuentas en el Servicio de cuentas." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton3"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="LOCATION"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(ubicacion)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACCESS_FINE_LOCATION" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación acceda a una ubicación precisa."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="12sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ACCESS_COARSE_LOCATION" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación acceda a la ubicación aproximada." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton4"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="MICROPHONE"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(microfono)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox9"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECORD_AUDIO" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación grabe audio."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton5"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="PHONE"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(telefono)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox10"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_PHONE_STATE" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite el acceso de solo lectura al estado del teléfono, incluido el número de teléfono del dispositivo, la información de la red celular actual, el estado de las llamadas en curso y una lista de todas las cuentas telefónicas registradas en el dispositivo."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox11"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CALL_PHONE" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación inicie una llamada telefónica sin pasar por la interfaz de usuario del Marcador para que el usuario confirme la llamada." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox12"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_CALL_LOG" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación lea el registro de llamadas del usuario." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox13"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WRITE_CALL_LOG" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación escriba (pero no lea) los datos del registro de llamadas del usuario." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox14"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADD_VOICEMAIL" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación agregue correos de voz en el sistema." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox15"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="USE_SIP" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación use el servicio SIP." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox16"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PROCESS_OUTGOING_CALLS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación vea el número marcado durante una llamada saliente con la opción de redirigir la llamada a un número diferente o cancelar la llamada por completo." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton6"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="SENSORS"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(sensores)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox17"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BODY_SENSORS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación acceda a los datos de los sensores que usa el usuario para medir lo que está sucediendo dentro de su cuerpo, como la frecuencia cardíaca."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton7"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="SMS"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(mensajes de texto)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox18"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SEND_SMS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación envíe mensajes SMS."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox19"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECEIVE_SMS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación reciba mensajes SMS." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox20"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_SMS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación lea mensajes SMS." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox21"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECEIVE_WAP_PUSH" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación reciba mensajes WAP push." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox22"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RECEIVE_MMS" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación monitoree los mensajes MMS entrantes." />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton8"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_marginRight="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#16ba88"
+                            android:text="STORAGE"
+                            android:layout_marginEnd="5sp" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:textColor="#12b483"
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(almacenamiento)" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox23"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="READ_EXTERNAL_STORAGE" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación lea desde el almacenamiento externo.
+"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkBox24"
+                            android:enabled="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textSize="13sp"
+                                android:textColor="#545454"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WRITE_EXTERNAL_STORAGE" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="#808080"
+                                android:text="Permite que una aplicación escriba en el almacenamiento externo."/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/boton9"
+                        android:layout_margin="5dp"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp"
+                        android:background="@drawable/boton_verde1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="32dp"
+                        android:layout_width="100dp"
+                        android:text="Solicitar"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

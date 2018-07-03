@@ -27,10 +27,27 @@ public class Main3Activity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 return true;
             case R.id.opcion2:
-                startActivity(new Intent(getApplicationContext(),Main4Activity.class));
+                startActivity(new Intent(getApplicationContext(),Main2Activity.class));
+                return true;
+            case R.id.opcion3:
+                solicitarTodos();
+                return true;
+            case R.id.opcion4:
+                configurarAplicacion();
+                return true;
+            case R.id.opcion5:
+                startActivity(new Intent(getApplicationContext(),Main3Activity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void configurarAplicacion() {
+
+    }
+
+    private void solicitarTodos() {
+
     }
 }
