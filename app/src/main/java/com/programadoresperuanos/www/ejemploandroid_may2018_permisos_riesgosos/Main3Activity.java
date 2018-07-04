@@ -11,10 +11,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
@@ -46,6 +49,10 @@ public class Main3Activity extends AppCompatActivity {
     RelativeLayout l;
     Snackbar snak1, snak2;
 
+    TextView firma_titulo, firma_enlaceweb, firma_repositorio;
+    ImageView firma_logo;
+    CardView firma_autor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +68,59 @@ public class Main3Activity extends AppCompatActivity {
                 requerirPermisos();
             }
         });
+
+        firma_titulo = findViewById(R.id.firma_titulo);
+        firma_enlaceweb = findViewById(R.id.firma_enlaceweb);
+        firma_repositorio = findViewById(R.id.firma_repositorio);
+        firma_logo = findViewById(R.id.firma_logo);
+        firma_autor = findViewById(R.id.firma_autor);
+
+        firma_titulo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_enlaceWeb();
+            }
+        });
+        firma_enlaceweb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_enlaceWeb();
+            }
+        });
+        firma_logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_enlaceWeb();
+            }
+        });
+        firma_repositorio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_repositorio();
+            }
+        });
+        firma_autor.setClickable(true);
+        firma_autor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                open_autorEnlace();
+            }
+        });
+    }
+
+    private void open_autorEnlace() {
+        Uri uriautor = Uri.parse(getString(R.string.firma_autorEnlace));
+        startActivity(new Intent(Intent.ACTION_VIEW,uriautor));
+    }
+
+    private void open_repositorio() {
+        Uri urirep = Uri.parse(getString(R.string.firma_repositorio));
+        startActivity(new Intent(Intent.ACTION_VIEW,urirep));
+    }
+
+    private void open_enlaceWeb() {
+        Uri uriweb = Uri.parse(getString(R.string.firma_enlaceWeb));
+        startActivity(new Intent(Intent.ACTION_VIEW,uriweb));
     }
 
     @Override
